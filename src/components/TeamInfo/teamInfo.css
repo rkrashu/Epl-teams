@@ -1,0 +1,15 @@
+.teamInfoContainer{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.teamLogo img{
+    width: 300px;
+}
+.teamInfo{
+    padding-top: 35px;
+    color: white;
+}
+.teamLogo{
+    padding: 35px;
+}

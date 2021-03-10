@@ -1,22 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
-import { useEffect, useState } from 'react';
+import Home from './components/Home/Home';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import NotFound from './components/NotFound/NotFound';
+import TeamDetails from './components/TeamDetails/TeamDetails';
+
 
 function App() {
-  const [leagues, setLeagues] = useState([])
-  useEffect( () => {
-    const url = 'https://www.thesportsdb.com/api/v1/json/1/all_leagues.php'
-    fetch(url)
-    .then (res => res.json())
-    .then (data => {
-      setLeagues(data.leagues)
-    })
-  },[])
-  console.log(leagues)
-
+ 
   return (
-    <div >
-     
+    <div>
+      <Router>
+        <Switch>
+          <Route path exact = '/'>
+            <Home></Home>
+          </Route>
+          <Route path= '/home'>
+            <Home></Home>
+          </Route>
+          <Route path='/team/:idTeam'>
+            <TeamDetails></TeamDetails>
+          </Route>
+          <Route path='*'>
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

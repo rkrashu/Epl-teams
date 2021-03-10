@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Leagues = () => {
+const SocialIcon = () => {
     return (
         <div>
-            hello
+            
         </div>
     );
 };
 
-export default Leagues;
+export default SocialIcon;

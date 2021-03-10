@@ -1,0 +1,17 @@
+.header-bg{
+    background-image: url('https://wallpaperaccess.com/full/1337871.jpg');
+    height: 300px;
+    padding-top: 100px;
+}
+.title{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+
+}
+/* .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
