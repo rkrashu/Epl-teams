@@ -17,7 +17,7 @@ const TeamInfo = (props) => {
                 <h5>Gender: {strGender} </h5>
             </div>
             <div className='teamLogo col-md-5 col-sm-12 text-center'>
-                <img src={(Object.strGender !=='male') ? maleImg : femaleImg} alt=""/>
+                <img src={(Object.strGender ==='male') ? maleImg : femaleImg} alt=""/>
             </div>
             </div>
         </div>

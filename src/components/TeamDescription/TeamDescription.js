@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const TeamDescription = (props) => {
-    const {strDescriptionEN, strFacebook, strTwitter, strYoutube} = props.teamDetail
+    const {strDescriptionEN} = props.teamDetail
     console.log(props.teamDetail)
     return (
         <div className='container'>
