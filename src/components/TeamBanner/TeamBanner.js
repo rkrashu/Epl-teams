@@ -2,9 +2,10 @@ import React from 'react';
 import './teamBanner.css'
 
 const TeamBanner = (props) => {
-    const {strTeamBadge} = props.teamDetail
+    const {strTeamBadge, strStadiumThumb} = props.teamDetail
+    console.log(props.teamDetail)
     return (
-        <div className='teamBanner'>
+        <div className='teamBanner' style={{backgroundImage: `url(${strStadiumThumb})`, backgroundRepeat:'no-repeat', backgroundSize:'cover'}}>
             <img src={strTeamBadge} class="img-fluid" alt=""/>
         </div>
     );

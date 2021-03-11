@@ -10,14 +10,14 @@ const TeamInfo = (props) => {
         <div className = 'container bg-dark teamInfoContainer'>
             <div className='row'>
             <div className='teamInfo col-md-7 com-sm-12 text-center'>
-                <h2>{strTeam}</h2>
+                <h2 style={{color:'red'}}>{strTeam}</h2>
                 <h5>Founded: {intFormedYear} </h5>
                 <h5>Country: {strCountry}</h5>
                 <h5>Sport Type: {strSport} </h5>
                 <h5>Gender: {strGender} </h5>
             </div>
             <div className='teamLogo col-md-5 col-sm-12 text-center'>
-                <img src={(Object.strGender ==='male') ? maleImg : femaleImg} alt=""/>
+                <img src={(Object.strGender !== 'female') ? maleImg : femaleImg} alt=""/>
             </div>
             </div>
         </div>
