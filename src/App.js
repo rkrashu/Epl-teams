@@ -1,4 +1,5 @@
 import './App.css';
+import Home from './components/Home/Home';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -14,6 +15,12 @@ function App() {
     <div>
       <Router>
         <Switch>
+          <Route path exact = '/'>
+            <Home></Home>
+          </Route>
+          <Route path= '/home'>
+            <Home></Home>
+          </Route>
           <Route path='/team/:idTeam'>
             <TeamDetails></TeamDetails>
           </Route>
