@@ -16,17 +16,8 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route path exact = '/'>
-            <Home></Home>
-          </Route>
-          <Route path= '/home'>
-            <Home></Home>
-          </Route>
           <Route path='/team/:idTeam'>
             <TeamDetails></TeamDetails>
-          </Route>
-          <Route path='*'>
-            <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>

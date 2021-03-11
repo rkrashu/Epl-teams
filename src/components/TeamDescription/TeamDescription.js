@@ -5,6 +5,7 @@ import { faFacebookF, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-
 
 const TeamDescription = (props) => {
     const {strDescriptionEN, strFacebook, strTwitter, strYoutube} = props.teamDetail
+    console.log(props.teamDetail)
     return (
         <div className='container'>
             <div>
@@ -17,9 +18,9 @@ const TeamDescription = (props) => {
             </div>
             <div className="text-center p-5">
                     <span><strong>Share:</strong></span>
-                    <a href={strFacebook}><FontAwesomeIcon className="social-icon" icon={faFacebookF} /></a>
-                    <a href={strTwitter}><FontAwesomeIcon className="social-icon" icon={faTwitter} /></a>
-                    <a href={strYoutube}><FontAwesomeIcon className="social-icon" icon={faYoutube} /></a>
+                    <a href="https://www.facebook.com"><FontAwesomeIcon className="social-icon" icon={faFacebookF} /></a>
+                    <a href="https://twitter.com"><FontAwesomeIcon className="social-icon" icon={faTwitter} /></a>
+                    <a href="https://www.youtube.com"><FontAwesomeIcon className="social-icon" icon={faYoutube} /></a>
                 </div>
         </div>
     );
